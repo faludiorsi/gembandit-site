@@ -325,8 +325,8 @@ section, .band { scroll-margin-top: 84px; }
 .credit:hover b { color: #fff; }
 .credit:hover .heart { transform: scale(1.18); }
 .credit-offer { margin: 0; color: #CDAEBB; font-size: 13px; line-height: 20px; }
-.credit-offer a { color: var(--footer-rose); }
-.credit-offer a:hover { color: var(--cream); }
+.credit-offer a { color: var(--footer-rose); font-weight: 700; border-bottom: 1px solid rgba(226, 160, 184, 0.45); padding-bottom: 1px; }
+.credit-offer a:hover { color: var(--cream); border-bottom-color: var(--cream); }
 
 /* ragadós Meska-gomb mobilon (a hero után jelenik meg, a láblécnél eltűnik) */
 .sticky-cta {
