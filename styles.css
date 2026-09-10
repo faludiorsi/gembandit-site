@@ -134,7 +134,7 @@ section, .band { scroll-margin-top: 84px; }
 .brand-name strong { color: var(--plum); font-size: 22px; font-weight: 700; letter-spacing: 0.01em; line-height: 28px; }
 .brand-name span { color: var(--rose-text); font-size: 11px; font-weight: 600; letter-spacing: 0.28em; line-height: 14px; }
 .nav-links { display: flex; align-items: center; gap: 30px; order: 2; margin-left: auto; padding-right: 8px; }
-.nav-links a { color: var(--plum-soft); font-size: 14px; font-weight: 500; letter-spacing: 0.02em; line-height: 18px; padding: 13px 0; }
+.nav-links a { color: var(--plum-soft); font-size: 14px; font-weight: 500; letter-spacing: 0.02em; line-height: 18px; padding: 13px 0; white-space: nowrap; }
 .nav-links a:hover { color: var(--plum); }
 .nav-links a.btn { color: var(--cream); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; }
 .nav-links a.btn:hover { color: #fff; }
@@ -341,10 +341,11 @@ section, .band { scroll-margin-top: 84px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px 40px; }
   .nav-links { gap: 22px; }
   .facts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 32px; }
+  .facts-grid .fact:last-child { grid-column: 1 / -1; }
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .hero .wrap { grid-template-columns: 1fr; gap: 24px; }
   .hero-art { padding: 30px 0 30px; }
   .hero-photo { width: min(380px, 84vw); }
@@ -367,8 +368,6 @@ section, .band { scroll-margin-top: 84px; }
   .nav.open { background: rgba(246, 228, 234, 0.92); -webkit-backdrop-filter: none; backdrop-filter: none; }   /* az elmosás rögzített panelt fogna be */
   body.menu-open { overflow: hidden; }
   .nav-shop { padding: 12px 16px; }
-  .sticky-cta { display: block; }
-  .footer .wrap { padding-bottom: 110px; }   /* hely a ragadós gombnak, hogy ne takarja a stúdió-sort */
 }
 
 @media (max-width: 640px) {
@@ -376,6 +375,9 @@ section, .band { scroll-margin-top: 84px; }
   .grid > :nth-child(n) { margin-top: 0; }
   .grid > :nth-child(odd) { transform: rotate(-0.6deg); }
   .grid > :nth-child(even) { transform: rotate(0.6deg); }
+  .sticky-cta { display: block; }
+  .footer .wrap { padding-bottom: 110px; }   /* hely a ragadós gombnak, hogy ne takarja a stúdió-sort */
+  .facts-grid .fact:last-child { grid-column: auto; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px 20px; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-bottom .row { flex-direction: column; align-items: flex-start; }
