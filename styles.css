@@ -318,9 +318,10 @@ section, .band { scroll-margin-top: 84px; }
 }
 .footer-bottom .disclaimer { max-width: 820px; margin: 0; }
 .footer-bottom .row { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
-.credit { display: inline-flex; align-items: center; gap: 6px; color: #CDAEBB; padding: 6px 0; border-bottom: 1px solid rgba(226, 160, 184, 0.35); }
-.credit b { color: var(--footer-rose); font-weight: 700; }
-.credit:hover { color: var(--cream); border-bottom-color: var(--footer-rose); }
+.credit-row { margin: 4px 0 0; padding-top: 20px; border-top: 1px solid rgba(251, 241, 236, 0.1); text-align: center; }
+.credit { display: inline-flex; align-items: center; gap: 6px; color: var(--footer-rose); font-size: 14px; letter-spacing: 0.02em; padding: 8px 4px; border-bottom: 1px solid rgba(226, 160, 184, 0.35); }
+.credit b { color: var(--cream); font-weight: 700; }
+.credit:hover { color: var(--cream); border-bottom-color: var(--cream); }
 
 /* ragadós Meska-gomb mobilon (a hero után jelenik meg, a láblécnél eltűnik) */
 .sticky-cta {
